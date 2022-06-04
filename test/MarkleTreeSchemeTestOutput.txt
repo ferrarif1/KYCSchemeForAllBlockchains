@@ -1,31 +1,233 @@
-zhangyuanyi@192 KYCSchemeForAllBlockchains %  npx hardhat run --network localhost test/MarkleTreeScheme.js
-proof of 93113bb60c48303a49a1b495e7bd1cac88c731f8590e8f5b0a4c3b577a27fdec is 91f58e6102089fbe599a65ebc55d811ee365e4f32565e839e5b8e7f4298864d4,ff8fc691cecae374dcdc74d63d82e73b0865e8ffdb47cbb8fd2418189a1fa70f,5c973e6abe240ca76cd53d6ccf675e5448eba9360c8def2f222afdd442484a03,538c7e2ce55f1b911669d566e885a352126d69a57c6206cf729192bcd110d69d,972750e2e906f1a8752c5eb76b1d627dee62bc668e6d5388e520e84605b197ae,2cc5384310a031512f65f378d11c5c902c733e38042b13c6e69f44e5e8ea1cac,0f3689fa065817187620b9be1d438de93e00cfea4828aa043aca8266e82d9a5d
+node：
+zhangyuanyi@192 KYCSchemeForAllBlockchains %  npx hardhat node
+Started HTTP and WebSocket JSON-RPC server at http://127.0.0.1:8545/
+
+zsh：
+zhangyuanyi@192 KYCSchemeForAllBlockchains % npx hardhat run --network localhost test/MarkleTreeScheme.js
+└─ e00b6b13d77ac98f8ff53658241723b8347250c8883ff06c064456b044090f7e
+   ├─ 64ccd0697c79b58827b59d29a6fc008d210116998e5b0db702b67d95325e2c1e
+   │  ├─ 388d37353cd298dfb3382eed418c0d434f95112a4f5a23fd7a7d06ecd47da11a
+   │  │  ├─ 078851bdab9fe711b70f31128f892cef1def89928d7151edd0e660d14f7179c8
+   │  │  │  ├─ 3e5e0912eb9bb98519ea5c5503c33ffa0c3682cdac167a2eb560ee4dfa958b93
+   │  │  │  │  ├─ ce829c0c336c2b5a15138d44e7e6aade7c1a0d9709af80b75026be01de74a076
+   │  │  │  │  │  ├─ e93f3294daebf0b54ae668c75ac70305b82d4deadaf447f265c05e56f9cb309a
+   │  │  │  │  │  │  ├─ 6970d5b0fd6192037aeceafb671cc7d019d410277800a1d72ce47226e9d39a05
+   │  │  │  │  │  │  └─ 8c17c9babe26f471e0fad9f6dc4e6e0c855a10016a2e613d8be32969e1bd04d3
+   │  │  │  │  │  └─ f4fefbf2b950c467a0a03223ddb1d5ce61d6df4c0112a7433dfe8fa05cd9cbd6
+   │  │  │  │  │     ├─ 7382dc062c130a1283be301133c5176036a3198d86e98f85e9ccecf0deadb89e
+   │  │  │  │  │     └─ ec820d8bfae8dbdd1a3e29dc696f6a9a020e54cdd84fd4ec935911001faa50b0
+   │  │  │  │  └─ dfcee74cc1bd88af159e13de7f311d0edb2794d50ba9d5a215a7cf6800cb8263
+   │  │  │  │     ├─ ad8f601b9130b40f6210afaacafea8514b3385856bdd0d822fe97aabc01849b4
+   │  │  │  │     │  ├─ bc95fa50ea4c0b725fd38b9c98389336feb4ea1f406a6f37c79054945c484afb
+   │  │  │  │     │  └─ fff0a6b285adbe161f816872159781baa4f28e864087d8287385981fa1d50a4e
+   │  │  │  │     └─ 8ae3f12998c9ca94531cc8644833f05e955c22c187cac0a75d98334727eab13a
+   │  │  │  │        ├─ 67928e4c9134aa6b237ded046518e3de30dca3193385bce2bd9c90c9081b6bc6
+   │  │  │  │        └─ 9dcfa4b2daade5340a39b979d4f11c05a69b4c568ae59211d68728e0f386bf9e
+   │  │  │  └─ b74f307302654cd6ce71639b56bd94aae0098986875f7def2362a38aa4594f01
+   │  │  │     ├─ a83c9fa058d02325e6b7cdb2b23a26b0f4fad7e5c82e1988f384c4aff965490c
+   │  │  │     │  ├─ 88f6b56200b9737e0d546cbf479653d3762a0e4afdb95753be967fba1b18ea28
+   │  │  │     │  │  ├─ f1bcd9a296cf712a6948d3ab71456376e5d35638f040ae6242d77e71999c1266
+   │  │  │     │  │  └─ 4c96a61953776c96df581738c903738a0ca27e196a949b770b05d454f9d2e0c6
+   │  │  │     │  └─ fb0a46f51114c46ee8e670a092a8fe093650c8012b739ac200e0bd5183b3026f
+   │  │  │     │     ├─ 75bd6b6df3cc0c63803dd071fe09daf8b79059f18cd8fbc4aedef3b72c239949
+   │  │  │     │     └─ 05313b9efc3ab11bc3fbb6fa2cb14217d861fbce701a22499e909c37c474db8b
+   │  │  │     └─ c887af2664d02252535bbe4fba6965c5d72cc335f1cc059a5604028604f437e1
+   │  │  │        ├─ 06968949f78e0cd0dc691468d96b94320315404eee2d745bc9ec1c7314c8286a
+   │  │  │        │  ├─ 23f12677e6c4649aad751e78d954eb3211a2e2b3155e8a91c5c375ac0ed798fe
+   │  │  │        │  └─ 927f4832a708965113da1a9fa44feafc7297219030b7d4dac1d649d6018a351a
+   │  │  │        └─ b1d9676130f7d6742d21d94a24d7c5701c378be58728157eb6fda32cddf9afc4
+   │  │  │           ├─ 708a3d9acec52d24b3eb005c46f1b2456d5452bb1f8f56f67011f9cf3fe49a15
+   │  │  │           └─ c804d89b2681fd77e70f486665d1b80b34e22a24dbca00f87e7552a210b996f9
+   │  │  └─ 4332328b7566b7fa03cede58e26980ee05305c41310c599d71106b43e71cf001
+   │  │     ├─ 0462c874fc6b0edaae3b5e608f165a5fb7cd11730d29188832ab6a9feca6644f
+   │  │     │  ├─ d3f910d752cee52ebf927881ef350c8661505f4e0e02721dfc51bac036fddec6
+   │  │     │  │  ├─ f82d013e02bb4117a29c7ccffb46f0c6798b369654c935ee48640f516af54aa6
+   │  │     │  │  │  ├─ 31166facbe3c4f7616325f6a83046ce8b3f5feab491efe83232ed3d0af811105
+   │  │     │  │  │  └─ f98e35671f1506262d40f97a044b75ae66e1d3e52ee3b3f0e739cef2cea94825
+   │  │     │  │  └─ aeba915719f16fe5a7d28846be0569957efd460ee96bc2992604adbd31ad399b
+   │  │     │  │     ├─ 0874696b7384cfd42d80772ffc29eb0fa86ee34b7e5d0dbad8ddbf6f67c3e41d
+   │  │     │  │     └─ 2758c3f9a32382b45ad43670df35fdb8d7a385a8dcd2285b88e14abe8cd74359
+   │  │     │  └─ a1a9555e0db152d5e5eacbe11435eab7048682ebeb4b37324d70f7e36b6709b9
+   │  │     │     ├─ 0c21f54d8148ce9a4cad146b9a89a68d19239c04ffefddb55b50d3c89945f5df
+   │  │     │     │  ├─ 023b29034dbbce2f484309a7a6da28dafcdb3b841efa34048f767bc688a763f8
+   │  │     │     │  └─ 27cd637b9fd0e67ed6750a86bf833d3b2cc8386187d357c0933801c628f260da
+   │  │     │     └─ b83dd9adab4e10be4a2c389fcad6725ee0f2e270b39594504f21a804a85e647c
+   │  │     │        ├─ 15b420ed6822cf3fb47922ad0fc454b7ac5a22cb4ec25a215a97199f4a3108c1
+   │  │     │        └─ 869a3b3776b5a873341f27dbd1ba0412fb4fd5a566682d1555fb053302f2d873
+   │  │     └─ 7bc71cdd80183ffbb9c02817357546c32af79def6dc28ebc30241dee26bfd601
+   │  │        ├─ 8f7763f0b577521d3522edc378f58079db1f2019b8fc38c763e287d5fa6e8e94
+   │  │        │  ├─ bdb2b9e711582ca83ceeb190ab4a4d9409014866124df20596d9b36e4a300d85
+   │  │        │  │  ├─ 96121c4efbe3b4b9c09eb6d8d098fe4f543e2f92b25c383362ed073b46d0d00b
+   │  │        │  │  └─ da7b8e3308bd573550073db67acc1debe25a2f5fb074b2ed852c5ee081e2ea4d
+   │  │        │  └─ c342670b3aadd8744402f46386ee13a9437acfa24414134c50c209bdc2c067f0
+   │  │        │     ├─ 3246f22517417827bde0eafd0b21d32691c880875c6b3a4d3789ceb1508986bf
+   │  │        │     └─ c76561883d37f582f4e947726634cddb842dfa18b3abae37f7a5f6bd7919bfa8
+   │  │        └─ 3306bcc6e43a1f7977b49b3916674489d69580d3375d48a4947bf216adff9f7f
+   │  │           ├─ 508fdcdc372b07f17ed039457a1bc4796447d94b9a896bc55af5748c2b4208af
+   │  │           │  ├─ 60554b3c421624e9bad1278e0907c6658d3136d65fd73133a092bee42c4695e4
+   │  │           │  └─ dfdce6178cc9d005db5833857298748856d7347533cd74ad26bc34edb33760d0
+   │  │           └─ d6172e31af63876d67612c6ff22504700812a8b0b1b9b7f42aa5af61a7956fe8
+   │  │              ├─ cfd99aaa7436ed3dc514e98d22b82ea246f3d71e221ced5681c4e440e892604d
+   │  │              └─ a1e5148218646f30d168a6a265efc77c093d7e43dc9bd307e7d00f87e2771bcb
+   │  └─ 1c15a3c4c7cdd8bfa25d81a41724b496912a47ff27bf13e9490dab23a467dd7c
+   │     ├─ 87313c5e84b5a634879e382a1e82e47c1c7692f710b799b64cefa2a19bb48055
+   │     │  ├─ 6b45093689fad3945ebe4cfc1fa37b6e2b5992dff7e2e613bb6e3faa7c3fc58a
+   │     │  │  ├─ b276c7178e665e177dc4adb1f84a6620ec458b2d899e45cadd8acd72b97687cf
+   │     │  │  │  ├─ a6c3eaf1130bfad4cce54823b51b5dc344b7c4ecfeb8fca6982556f01695a9da
+   │     │  │  │  │  ├─ f1ff726726222529fcbad356a6921b933715b2e740c500a62ae510b6646aca91
+   │     │  │  │  │  └─ bc7433e0f46bbbfe8fa4fd65925d846a862f94c848583d1522b6dfbbaf08d744
+   │     │  │  │  └─ de1fcdea21a96731f5ffa312b38f5bbecc95668179b73b590befb381710a4fd3
+   │     │  │  │     ├─ ccbaef9c6996a287c8132e89c5f67ca8a641785ae72e622fafc0b2bf454c17c2
+   │     │  │  │     └─ e8721e1533278a18c4c5e8bfe7334b3ef52f159bad3f9e8946b7a7896d0e078e
+   │     │  │  └─ 937f1c208b036b90f24dbacc41cb460d0b18e2730967ddb1f300eb7b00b225d0
+   │     │  │     ├─ 88ab7105b53e9917eab175475e5fd6279fe0473783c90ba31175fbccf84ffb09
+   │     │  │     │  ├─ 855f72bb8037ae217d8c584f66ad7c798779265381c62afe9ec64881442e1da6
+   │     │  │     │  └─ a49681d4f14618e89262a6aedafcd68584c90ab7218324c912678e8981816a2f
+   │     │  │     └─ 1fd7f6794054f63106e19889cfe588caeeb54888d83f82f88d02ad904f6b7a61
+   │     │  │        ├─ c63d10948e888c842505017fc3fc71f576309cd461c21461ba8a702057c28b70
+   │     │  │        └─ 8fbc190d5d9c2204f6ab161284d7fd4290e53eb03640afe9b39968b1c31a4dbf
+   │     │  └─ 3f428aaf426d77ec035262cba171d65e6c63ffcf98565460bf9eb87c9c80ccaf
+   │     │     ├─ d9f21ee5d8f536777563c125d4299354192402b39938930d76e288044054608e
+   │     │     │  ├─ 2ebb8f8b68e14353869f81aa3a33732c9707987daef8ad632bf09fe9ff55b852
+   │     │     │  │  ├─ df68c8789f62f2d616f887823932b88cf95395732c1cba8e8f6d27340c81adfc
+   │     │     │  │  └─ b4343dafdc6dfedc6f5552e9aa95191695f93773bda26479418730b9e7e72b3d
+   │     │     │  └─ 677d38e3cc4a40e380b38e2bb0bdf76cc8ae57fb1e2087ef6d958b0535b16574
+   │     │     │     ├─ ee19c70ac6e714e7afb9ea7626ae7e25ae4cf20aa2500cc2d34bb7904d5e706e
+   │     │     │     └─ 4c59642c726d3631459573e42a2e365b3ca3698328b9a96f58a9aad31a681048
+   │     │     └─ a3455ef165980ff1a50c07aad472f0ee2ded1db3561ec67e9d86fa445a7c93bf
+   │     │        ├─ f81e6d3c337dde56ed94ad1d41acd24e30a49f492165c74182c19f70b14fe6ad
+   │     │        │  ├─ ef8be7ebd06fdff1ef63123612615f2731a6a84b369aa22db376f19a5ec14edb
+   │     │        │  └─ 791ea1e475181da329eec7afb1eed167c752d0309dd40cd8d536cfc167d1728d
+   │     │        └─ c4149781f18b56781cd22760406d2fff7401481bc72dd91e978181cd040a887c
+   │     │           ├─ 9d7f453abfbc0c9f610ad48b5f7922a9b2905f379d323706b885334f0bc00bed
+   │     │           └─ 4c421d1488fc1e8fb5593c2a722188ecca155ef1855add41c7e1728ceadebd59
+   │     └─ 4f6641324eb6090589569e38c0a4490f7ff419c62fb8a88fb9a7440443dc29e5
+   │        ├─ 4bd38b3198c03f3fde7dbad1af75bec580433cae79fa1bc77edddbf9e3a8487b
+   │        │  ├─ ddebfde642f41396ac53e262d501ae9fa536023c30465340a7f82b2314d75447
+   │        │  │  ├─ c2d8bbe77f854bcedf94216013da785a633fbd0c6d70e3b9c778b62a12365651
+   │        │  │  │  ├─ c8c872d7e5f33b1fe891965a6d8a099c4076c379a638430c90a82d8f8635e4c7
+   │        │  │  │  └─ dcf50f8af8e32e682025afba8bd9bc5522b6bb88affc12c2e0471d0cb56a6840
+   │        │  │  └─ 2f0cbb393622fd13765eed6b1830524496f9cd932b14c6ab311765bbf07c6ae8
+   │        │  │     ├─ e0844726486f50b2cf1ddcb70cb9c3bb3251092bff889836801d9c7f5e2c0fd4
+   │        │  │     └─ c720ee1fbe7c35a36817090e3f409c79d6d2bd1250312fd396a77a50e91c82e9
+   │        │  └─ 7ff86a70553a39be7b6c7aee08c91ad1f324b173e1504babf9c1d076835fb90c
+   │        │     ├─ 8b2e9d159b1409254071b4c29bd9fcc93156330fb1c21782a1d546a0c27df813
+   │        │     │  ├─ 682671d3444dd18dbf9a5f8b8922d5776642321e6ca64fb22857eb5935b391e5
+   │        │     │  └─ 3ba8537a89ffe5a93a35a8a43bd7a1038b903da1da391203759e650d1c748f51
+   │        │     └─ 9fac62c4a5f456f31b8695f61f0a0e8c454e384e3722470ddc2b251a268f05b5
+   │        │        ├─ c1ac4fb78a2569146d5313a0f000cb7a9243a07c34dbd8135fae8b22c454eab5
+   │        │        └─ a564a104766d01ea8af503349173de58bbc39b73a8cf803fd81263ed524f5ea7
+   │        └─ 36eac4551a615e25adfd4fe381c563fad4c03db60bd35dc24faa0738019b270d
+   │           ├─ 0cae051d4c9887a1e8565aa60c4433c7a569d2a3a37b952852606970aee9b278
+   │           │  ├─ a626c3a7d4b26729a15531847fbac09337c81714fd489c1d3b213706b1611d6c
+   │           │  │  ├─ 851516aa6c1cb81ea562d5a8f0bb884043f09eacabc22f0deb26ab722b2e2239
+   │           │  │  └─ 6ffa1f50b448cb6f711d273f331ce48535d7ba1c58bbc4b16a01a5b1fe7fd508
+   │           │  └─ e6071382b23c6993094a7accdbd8f5bc18878f1d6abacedd48cce45551f05bda
+   │           │     ├─ 1291d103ac8ff8626f8d23f0b572f853d9b693880b535975d54ebb24f035bb95
+   │           │     └─ 316ab9e16d4c33f5eb6ce6a5935ce33173e5fd37bac953ff15adafe390f4ec8e
+   │           └─ 662358647feb49a233a712191abaa1092da0c0a1551806b6d498bb91e10ecd54
+   │              ├─ 35d287aebfefb6a8d1dceb6f8ef0958e89c78da990a7c710b74b1b07cb854d38
+   │              │  ├─ 70500e6503933520fd28e3d5375f13ca390d96eb6bacecbfdd4ba0b0b6626bc4
+   │              │  └─ 1f8730f654ae2847a570dbdc957b4de84c41986d90b9c0952f4ca25192d4388a
+   │              └─ 166d82bea69635c731c9c57317247f93e2fcbf75c481c4f912029a3f10451c70
+   │                 ├─ 33bfa59cb3fd2d393f9ecac96ed7bded1a5c6df0f45a8e875cc41ab410b3874e
+   │                 └─ 931bdc12c6a1d57c7514b6fcc18d24a173dfcdebded6c9aa27fee26a1cc74512
+   └─ 7836e2e13557e9941cdf1a5e95fa3436dedacb6757268ecc3af5f1db16de3362
+      └─ 7836e2e13557e9941cdf1a5e95fa3436dedacb6757268ecc3af5f1db16de3362
+         └─ 7836e2e13557e9941cdf1a5e95fa3436dedacb6757268ecc3af5f1db16de3362
+            ├─ 220a75f216ef27e84d792d429e40f9347428669116bda70efc0ff2d718bcb448
+            │  ├─ 58a2686c2827676c5a1b27f2f39e05125e4f6878de4bfd3c7b158428faacc729
+            │  │  ├─ c4d86a2b058338fa6a9431e6b3699245b28ac5496140b37c49591556f9de054d
+            │  │  │  ├─ 344502d806625b4748361df2f227852b33043ce3536b17b6b118fe49102786ef
+            │  │  │  └─ 06a303eae82b24c6940296a045a59c68c09aa631a23f19973c29786337d05c9a
+            │  │  └─ 7c5bb0f1f5772f0cf1c99768e6f46ac44a2e231c5d924f2a76f703991977512a
+            │  │     ├─ 5cdf075a0a8d7835759c087fca80ebc8e59f748c4b51f425983601be2a4450d0
+            │  │     └─ 84c7a72c2768f10b23c7cb199d13aed48553d6240b363a69c06da52a182f24d8
+            │  └─ 1da4adb9e6557438084bd6d7b17d033db3b5ab50eb3e7dcab53f3a32a61ee488
+            │     ├─ 3ac6fc8b732e4b329b93f1ffda499b382b6495fce6dd89a29c92d7d2f952b08c
+            │     │  ├─ bc83ff48467d6985bd07e4bc81ef075e0e47c1d6349e6d4cf795c0fe7c5d38e9
+            │     │  └─ 46ea3a927885fda64d49a4a87a4b4b97b06f4587c6e9c96a14f1a5dfc697b1fb
+            │     └─ d5dbda50252eaada562d1902d3e16efed274dc20f6b05523e57b916c2afd89ec
+            │        ├─ 6e755c04db814d7d0277b01fe415aab35e6d64075ac7cade466ab15e04230f58
+            │        └─ 5959f04b023f31dc2a2d31074d1d495d56580608e1ccffeaddef9fb63116e4e0
+            └─ 0e76dea0153895cbf0d4411a05d1619ed1f4c17913f5ea5c862feca3b6a9d3ab
+               ├─ e8ac3440d4ab6b9b21340c6a45328ea08bc29cf848257211a9a8a8aad72c9cdd
+               │  ├─ 50ead3b661b08b1a05d0339a76cc3e0025268ee32108c83af28342abeb67c9d2
+               │  │  ├─ 944a708073fcf0a1ec6ffa8ba152dd18ce7744701c68606282196ec5a5e1b78b
+               │  │  └─ 2508826b85b85af7304ae4a1a12bc1642ad63539623f2bb6cae81e8b33fb2400
+               │  └─ bbee31ac372f774c77c838844435950d1011a37f6c552ec10d4571f1696ce08c
+               │     ├─ 1ec802745fe711d02f99be936bb76cad11ef50cf4fa55d04bc7938d31f70c7c7
+               │     └─ 4ee8b33e33a5d0f695a2b1e5b1063c72242d9753e719253aa85acbc6520845b4
+               └─ e694a40bf624e691e2f7a9108408c7ab73c6058248d55e63932d118feeb0e46f
+                  ├─ 6c22bea8c646b8f10eab12e916b1981403277e3f310443995adf2354a07ebc31
+                  │  ├─ 64a29c1280e902aba2c241205ef5439bb2129614fcd8889a38109308205e9af3
+                  │  └─ da8f7cd1817cf2e34ef22452fca94e49c14be732681004ffb8d29dd76e6fb12b
+                  └─ 7d42f09e9f28d762ac02773124b76233700be143c41a33149e3a2c5e1102b769
+                     ├─ 0846086ce3a73ca85bb32cb9d86ef405592a5c493010faa4cfe37daa22d8a5a4
+                     └─ 6017fe760873dde956ebf6e008ffd802c97ff918d8a07334dcc3c81c67b17000
+
+proof of 6970d5b0fd6192037aeceafb671cc7d019d410277800a1d72ce47226e9d39a05 is 8c17c9babe26f471e0fad9f6dc4e6e0c855a10016a2e613d8be32969e1bd04d3,f4fefbf2b950c467a0a03223ddb1d5ce61d6df4c0112a7433dfe8fa05cd9cbd6,dfcee74cc1bd88af159e13de7f311d0edb2794d50ba9d5a215a7cf6800cb8263,b74f307302654cd6ce71639b56bd94aae0098986875f7def2362a38aa4594f01,4332328b7566b7fa03cede58e26980ee05305c41310c599d71106b43e71cf001,1c15a3c4c7cdd8bfa25d81a41724b496912a47ff27bf13e9490dab23a467dd7c,7836e2e13557e9941cdf1a5e95fa3436dedacb6757268ecc3af5f1db16de3362
 Successfully generate merkle tree to ./test/outputMerkleTree.json.
 true
 false
+hexroot = 0xe00b6b13d77ac98f8ff53658241723b8347250c8883ff06c064456b044090f7e
+hexleaf = 
+0x6970d5b0fd6192037aeceafb671cc7d019d410277800a1d72ce47226e9d39a05
+hexproof = 
+[
+  '8c17c9babe26f471e0fad9f6dc4e6e0c855a10016a2e613d8be32969e1bd04d3',
+  'f4fefbf2b950c467a0a03223ddb1d5ce61d6df4c0112a7433dfe8fa05cd9cbd6',
+  'dfcee74cc1bd88af159e13de7f311d0edb2794d50ba9d5a215a7cf6800cb8263',
+  'b74f307302654cd6ce71639b56bd94aae0098986875f7def2362a38aa4594f01',
+  '4332328b7566b7fa03cede58e26980ee05305c41310c599d71106b43e71cf001',
+  '1c15a3c4c7cdd8bfa25d81a41724b496912a47ff27bf13e9490dab23a467dd7c',
+  '7836e2e13557e9941cdf1a5e95fa3436dedacb6757268ecc3af5f1db16de3362'
+]
+/*
+应为positions = 
+[
+  1, 1, 1, 1,
+  1, 0, 1
+]这里发现388与1c1反了过来，输出的position错误，按输出的树，
+本应该388在左，输入：388d37353cd298dfb3382eed418c0d434f95112a4f5a23fd7a7d06ecd47da11a1c15a3c4c7cdd8bfa25d81a41724b496912a47ff27bf13e9490dab23a467dd7c
+得到：d3c2e66216600cdf829d28ac559fe03366d732a96a3b9f5eef4884c8e9f15d20
+实际388在右，输入：1c15a3c4c7cdd8bfa25d81a41724b496912a47ff27bf13e9490dab23a467dd7c388d37353cd298dfb3382eed418c0d434f95112a4f5a23fd7a7d06ecd47da11a
+得到：64ccd0697c79b58827b59d29a6fc008d210116998e5b0db702b67d95325e2c1e 
+*/
 
-/Users/zhangyuanyi/Downloads/KYCSchemeForAllBlockchains/test/MarkleTreeScheme.js:95
-    const leaves = ['0x00000a86986e8ba3557992df02883e4a646e8f25 50000000000000000000', '0x00009c99bffc538de01866f74cfec4819dc467f3 75000000000000000000', '0x00035a5f2c595c3bb53aae4528038dd7a85641c3 50000000000000000000', '0x1e27c325ba246f581a6dcaa912a8e80163454c75 10000000000000000000'].map(x => keccak256(x))
-                                                                                                                                                                                                                                                                                                ^
-ReferenceError: keccak256 is not defined
-    at /Users/zhangyuanyi/Downloads/KYCSchemeForAllBlockchains/test/MarkleTreeScheme.js:95:298
-    at Array.map (<anonymous>)
-    at main (/Users/zhangyuanyi/Downloads/KYCSchemeForAllBlockchains/test/MarkleTreeScheme.js:95:289)
-    at Object.<anonymous> (/Users/zhangyuanyi/Downloads/KYCSchemeForAllBlockchains/test/MarkleTreeScheme.js:124:1)
-    at Module._compile (node:internal/modules/cjs/loader:1105:14)
-    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
-    at Module.load (node:internal/modules/cjs/loader:981:32)
-    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
-    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
-    at node:internal/main/run_main_module:17:47
+positions =  
+[
+  1, 1, 1, 1,
+  1, 1, 1
+]
+KYCManager deployed to: 0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6
+tree.verify =  true
+Error: missing argument: passed to contract (count=3, expectedCount=4, code=MISSING_ARGUMENT, version=contracts/5.6.0)
+    at Logger.makeError (/Users/zhangyuanyi/Downloads/KYCSchemeForAllBlockchains/node_modules/@ethersproject/logger/src.ts/index.ts:261:28)
+    at Logger.throwError (/Users/zhangyuanyi/Downloads/KYCSchemeForAllBlockchains/node_modules/@ethersproject/logger/src.ts/index.ts:273:20)
+    at Logger.checkArgumentCount (/Users/zhangyuanyi/Downloads/KYCSchemeForAllBlockchains/node_modules/@ethersproject/logger/src.ts/index.ts:332:18)
+    at /Users/zhangyuanyi/Downloads/KYCSchemeForAllBlockchains/node_modules/@ethersproject/contracts/src.ts/index.ts:187:12
+    at step (/Users/zhangyuanyi/Downloads/KYCSchemeForAllBlockchains/node_modules/@ethersproject/contracts/lib/index.js:48:23)
+    at Object.next (/Users/zhangyuanyi/Downloads/KYCSchemeForAllBlockchains/node_modules/@ethersproject/contracts/lib/index.js:29:53)
+    at /Users/zhangyuanyi/Downloads/KYCSchemeForAllBlockchains/node_modules/@ethersproject/contracts/lib/index.js:23:71
+    at new Promise (<anonymous>)
+    at __awaiter (/Users/zhangyuanyi/Downloads/KYCSchemeForAllBlockchains/node_modules/@ethersproject/contracts/lib/index.js:19:12)
+    at populateTransaction (/Users/zhangyuanyi/Downloads/KYCSchemeForAllBlockchains/node_modules/@ethersproject/contracts/lib/index.js:152:12) {
+  reason: 'missing argument: passed to contract',
+  code: 'MISSING_ARGUMENT',
+  count: 3,
+  expectedCount: 4
+}
 zhangyuanyi@192 KYCSchemeForAllBlockchains % 
 
 
 
 
 
+0xe00b6b13d77ac98f8ff53658241723b8347250c8883ff06c064456b044090f7e
 
+0x6970d5b0fd6192037aeceafb671cc7d019d410277800a1d72ce47226e9d39a05
 
+["0x8c17c9babe26f471e0fad9f6dc4e6e0c855a10016a2e613d8be32969e1bd04d3","0xf4fefbf2b950c467a0a03223ddb1d5ce61d6df4c0112a7433dfe8fa05cd9cbd6","0xdfcee74cc1bd88af159e13de7f311d0edb2794d50ba9d5a215a7cf6800cb8263","0xb74f307302654cd6ce71639b56bd94aae0098986875f7def2362a38aa4594f01","0x4332328b7566b7fa03cede58e26980ee05305c41310c599d71106b43e71cf001","0x1c15a3c4c7cdd8bfa25d81a41724b496912a47ff27bf13e9490dab23a467dd7c","0x7836e2e13557e9941cdf1a5e95fa3436dedacb6757268ecc3af5f1db16de3362"]
 
-
-
+[1,1,1,1,1,1,1]

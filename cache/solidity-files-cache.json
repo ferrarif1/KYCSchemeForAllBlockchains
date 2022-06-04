@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/zhangyuanyi/Downloads/KYCSchemeForAllBlockchains/contracts/KYCManager.sol": {
-      "lastModificationDate": 1654228983313,
-      "contentHash": "84d245799db2ba1c114055f12c9d309f",
+      "lastModificationDate": 1654328341458,
+      "contentHash": "e4ffdec914889656184edb9b01eb6264",
       "sourceName": "contracts/KYCManager.sol",
       "solcConfig": {
         "version": "0.8.3",

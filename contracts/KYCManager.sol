@@ -140,6 +140,36 @@ contract KYCManager is Ownable {
   }
 
 
+   function verifyTest(
+    bytes32 root,
+    bytes32 leaf,
+    bytes32[] calldata proof,
+    uint256[] calldata positions
+  )
+    public
+    pure
+    returns (bytes32  [] memory)
+  {
+    bytes32 computedHash = leaf;
+    bytes32  [] memory  allcomputedHash =  new bytes32[](proof.length+1);
+    allcomputedHash[0];
+    for (uint256 i = 0; i < proof.length; i++) {
+      bytes32 proofElement = proof[i];
+
+      if (positions[i] == 1) {
+        computedHash = keccak256(abi.encodePacked(computedHash, proofElement));
+        allcomputedHash[i] = computedHash;
+      } else {
+        computedHash = keccak256(abi.encodePacked(proofElement, computedHash));
+        allcomputedHash[i] = computedHash;
+      }
+    }
+    if(root==computedHash){
+
+    }
+    return allcomputedHash;
+  }
+
   fallback () external payable{
     revert();
   }

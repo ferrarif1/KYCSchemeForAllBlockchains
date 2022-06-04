@@ -340,6 +340,74 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "root",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "leaf",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32[]",
+						"name": "proof",
+						"type": "bytes32[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "positions",
+						"type": "uint256[]"
+					}
+				],
+				"name": "verify",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "root",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "leaf",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32[]",
+						"name": "proof",
+						"type": "bytes32[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "positions",
+						"type": "uint256[]"
+					}
+				],
+				"name": "verifyTest",
+				"outputs": [
+					{
+						"internalType": "bytes32[]",
+						"name": "",
+						"type": "bytes32[]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
 				"stateMutability": "payable",
 				"type": "receive"
 			}
@@ -367,7 +435,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"KYCNFT-LocalSever/contracts/KYCManager.sol": "KYCManager"
+			"contracts/KYCManager.sol": "KYCManager"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -397,12 +465,12 @@
 				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
 			]
 		},
-		"KYCNFT-LocalSever/contracts/KYCManager.sol": {
-			"keccak256": "0x02b081272498d960e1959a9a273cecb7859ea091ba69455d0a9a8d25b5be8b08",
+		"contracts/KYCManager.sol": {
+			"keccak256": "0x50f24e750b87d3d2fc835cf61b10048745b26696ca8bf379c124b771d7f66980",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://95522d554d35e85464a26dc80ff2ad301233b6faa354e525f5aad2c8ede495ce",
-				"dweb:/ipfs/QmRNkF6yBpsGwCmmNxa2mCX6XAiH2pc15nVuW1L3Uaj3CS"
+				"bzz-raw://82281d0c968c42a94183c4e58ed6a4e70d24523e0505ad048a576672b389c753",
+				"dweb:/ipfs/QmY2sZRmoChVoMVw7yjfWxQE4JKnUGo4UqGtNUULrLfFYP"
 			]
 		}
 	},
