@@ -1,0 +1,31 @@
+zhangyuanyi@192 KYCSchemeForAllBlockchains %  npx hardhat run --network localhost test/MarkleTreeScheme.js
+proof of 93113bb60c48303a49a1b495e7bd1cac88c731f8590e8f5b0a4c3b577a27fdec is 91f58e6102089fbe599a65ebc55d811ee365e4f32565e839e5b8e7f4298864d4,ff8fc691cecae374dcdc74d63d82e73b0865e8ffdb47cbb8fd2418189a1fa70f,5c973e6abe240ca76cd53d6ccf675e5448eba9360c8def2f222afdd442484a03,538c7e2ce55f1b911669d566e885a352126d69a57c6206cf729192bcd110d69d,972750e2e906f1a8752c5eb76b1d627dee62bc668e6d5388e520e84605b197ae,2cc5384310a031512f65f378d11c5c902c733e38042b13c6e69f44e5e8ea1cac,0f3689fa065817187620b9be1d438de93e00cfea4828aa043aca8266e82d9a5d
+Successfully generate merkle tree to ./test/outputMerkleTree.json.
+true
+false
+
+/Users/zhangyuanyi/Downloads/KYCSchemeForAllBlockchains/test/MarkleTreeScheme.js:95
+    const leaves = ['0x00000a86986e8ba3557992df02883e4a646e8f25 50000000000000000000', '0x00009c99bffc538de01866f74cfec4819dc467f3 75000000000000000000', '0x00035a5f2c595c3bb53aae4528038dd7a85641c3 50000000000000000000', '0x1e27c325ba246f581a6dcaa912a8e80163454c75 10000000000000000000'].map(x => keccak256(x))
+                                                                                                                                                                                                                                                                                                ^
+ReferenceError: keccak256 is not defined
+    at /Users/zhangyuanyi/Downloads/KYCSchemeForAllBlockchains/test/MarkleTreeScheme.js:95:298
+    at Array.map (<anonymous>)
+    at main (/Users/zhangyuanyi/Downloads/KYCSchemeForAllBlockchains/test/MarkleTreeScheme.js:95:289)
+    at Object.<anonymous> (/Users/zhangyuanyi/Downloads/KYCSchemeForAllBlockchains/test/MarkleTreeScheme.js:124:1)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+zhangyuanyi@192 KYCSchemeForAllBlockchains % 
+
+
+
+
+
+
+
+
+
+
