@@ -91,7 +91,6 @@ index.html:675 *****  averageLoopTimes = 1200.175 ln(n)=41.6
 index.html:676 *****  loggestFindTime = 4568
 index.html:677 *****  shortestFindTime = 27
 
-
 lengthChoose = 18
 *****  averageFindTime = 17013.35
 index.html:675 *****  averageLoopTimes = 13537.6125  ln(n)=44.4

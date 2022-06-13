@@ -49,7 +49,6 @@ const checkTree = (testAddrData, tree, root) => {
 
 
 
-
 function testMarkle() {
     const leaves = ['a', 'b', 'c'].map(x => keccak256(x))
     const tree = new MerkleTree(leaves, keccak256)
