@@ -105,7 +105,7 @@ contract KYCManager is Ownable {
     bytes32[] calldata proof,
     uint256[] calldata positions
   )
-    public
+    internal
     pure
     returns (bool)
   {
@@ -120,9 +120,26 @@ contract KYCManager is Ownable {
         computedHash = keccak256(abi.encodePacked(proofElement, computedHash));
       }
     }
+    
 
     return computedHash == root;
   }
+
+
+    function verifyKYCAuthProof(
+      bytes32 leaf,
+      bytes32[] calldata proof,
+      uint256[] calldata positions,
+      uint256 nft_id
+      )
+      public 
+      returns(bool)
+      {
+      address addr = NFTIdToManager[NFTId];
+      UserData memory userdata = ManagerToUserData[addr];
+      return verify(userdata.merkleRoot, leaf, proof, positions);
+    }
+
   /*
   for test
   */
