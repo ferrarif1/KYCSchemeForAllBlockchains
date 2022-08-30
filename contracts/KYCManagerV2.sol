@@ -113,9 +113,9 @@ contract KYCManager is Ownable {
     }
 
     /*
-  verify markle proof
+  verify merkle proof
   */
-    function verify(
+    function verifyMerkleProof(
         bytes32 root,
         bytes32 leaf,
         bytes32[] calldata proof,
