@@ -51,7 +51,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "NFTid",
+						"name": "NFTId",
 						"type": "uint256"
 					}
 				],
@@ -93,7 +93,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "NFTid",
+						"name": "NFTId",
 						"type": "uint256"
 					},
 					{
@@ -111,7 +111,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "NFTid",
+						"name": "NFTId",
 						"type": "uint256"
 					}
 				],
@@ -162,21 +162,8 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_kycnftContractAddr",
-						"type": "address"
-					}
-				],
-				"name": "setKYCNFTContractAddress",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
 						"internalType": "uint256",
-						"name": "NFTid",
+						"name": "NFTId",
 						"type": "uint256"
 					},
 					{
@@ -185,7 +172,20 @@
 						"type": "bool"
 					}
 				],
-				"name": "setNFTAvailableOfNFTId",
+				"name": "setAvailableOfNFTId",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_kycnftContractAddr",
+						"type": "address"
+					}
+				],
+				"name": "setKYCNFTContractAddress",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -206,53 +206,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_accumulator",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_n",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_g",
-						"type": "uint256"
+						"internalType": "bytes32",
+						"name": "newMerkleRoot",
+						"type": "bytes32"
 					}
 				],
-				"name": "updateAccumulator",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_n",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_g",
-						"type": "uint256"
-					}
-				],
-				"name": "updateAccumulatorPublicKey",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_accumulator",
-						"type": "string"
-					}
-				],
-				"name": "updateAccumulatorValue",
+				"name": "updateMerkleRoot",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -271,23 +230,13 @@
 						"components": [
 							{
 								"internalType": "uint256",
-								"name": "NFTid",
+								"name": "NFTId",
 								"type": "uint256"
 							},
 							{
-								"internalType": "string",
-								"name": "accumulator",
-								"type": "string"
-							},
-							{
-								"internalType": "string",
-								"name": "n",
-								"type": "string"
-							},
-							{
-								"internalType": "uint256",
-								"name": "g",
-								"type": "uint256"
+								"internalType": "bytes32",
+								"name": "merkleRoot",
+								"type": "bytes32"
 							}
 						],
 						"internalType": "struct KYCManager.UserData",
@@ -302,7 +251,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "NFTid",
+						"name": "NFTId",
 						"type": "uint256"
 					}
 				],
@@ -312,23 +261,13 @@
 						"components": [
 							{
 								"internalType": "uint256",
-								"name": "NFTid",
+								"name": "NFTId",
 								"type": "uint256"
 							},
 							{
-								"internalType": "string",
-								"name": "accumulator",
-								"type": "string"
-							},
-							{
-								"internalType": "string",
-								"name": "n",
-								"type": "string"
-							},
-							{
-								"internalType": "uint256",
-								"name": "g",
-								"type": "uint256"
+								"internalType": "bytes32",
+								"name": "merkleRoot",
+								"type": "bytes32"
 							}
 						],
 						"internalType": "struct KYCManager.UserData",
@@ -343,11 +282,6 @@
 				"inputs": [
 					{
 						"internalType": "bytes32",
-						"name": "root",
-						"type": "bytes32"
-					},
-					{
-						"internalType": "bytes32",
 						"name": "leaf",
 						"type": "bytes32"
 					},
@@ -360,9 +294,14 @@
 						"internalType": "uint256[]",
 						"name": "positions",
 						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "NFTId",
+						"type": "uint256"
 					}
 				],
-				"name": "verify",
+				"name": "verifyKYCAuthProof",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -370,41 +309,7 @@
 						"type": "bool"
 					}
 				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "bytes32",
-						"name": "root",
-						"type": "bytes32"
-					},
-					{
-						"internalType": "bytes32",
-						"name": "leaf",
-						"type": "bytes32"
-					},
-					{
-						"internalType": "bytes32[]",
-						"name": "proof",
-						"type": "bytes32[]"
-					},
-					{
-						"internalType": "uint256[]",
-						"name": "positions",
-						"type": "uint256[]"
-					}
-				],
-				"name": "verifyTest",
-				"outputs": [
-					{
-						"internalType": "bytes32[]",
-						"name": "",
-						"type": "bytes32[]"
-					}
-				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -435,7 +340,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/KYCManager.sol": "KYCManager"
+			"contracts/KYCManagerV2.sol": "KYCManager"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -450,11 +355,11 @@
 	},
 	"sources": {
 		"@openzeppelin/contracts/access/Ownable.sol": {
-			"keccak256": "0x24e0364e503a9bbde94c715d26573a76f14cd2a202d45f96f52134ab806b67b9",
+			"keccak256": "0xa94b34880e3c1b0b931662cb1c09e5dfa6662f31cba80e07c5ee71cd135c9673",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e12cbaa7378fd9b62280e4e1d164bedcb4399ce238f5f98fc0eefb7e50577981",
-				"dweb:/ipfs/QmXRoFGUgfsaRkoPT5bxNMtSayKTQ8GZATLPXf69HcRA51"
+				"bzz-raw://40fb1b5102468f783961d0af743f91b9980cf66b50d1d12009f6bb1869cea4d2",
+				"dweb:/ipfs/QmYqEbJML4jB1GHbzD4cUZDtJg5wVwNm3vDJq1GbyDus8y"
 			]
 		},
 		"@openzeppelin/contracts/utils/Context.sol": {
@@ -465,12 +370,12 @@
 				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
 			]
 		},
-		"contracts/KYCManager.sol": {
-			"keccak256": "0x50f24e750b87d3d2fc835cf61b10048745b26696ca8bf379c124b771d7f66980",
+		"contracts/KYCManagerV2.sol": {
+			"keccak256": "0xd6af0d2cac24a2bb55c2645d74e8db6fde398a354d4621b83bc6bc377140a9e9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://82281d0c968c42a94183c4e58ed6a4e70d24523e0505ad048a576672b389c753",
-				"dweb:/ipfs/QmY2sZRmoChVoMVw7yjfWxQE4JKnUGo4UqGtNUULrLfFYP"
+				"bzz-raw://18e4247010f50f25caee7fe2c02533dadbbb43c602a862e96ce96883980a8365",
+				"dweb:/ipfs/QmYJ9Se2iFNF1yrMLJzGjdY9bGBUfq5E7yjU667qEx3pLn"
 			]
 		}
 	},

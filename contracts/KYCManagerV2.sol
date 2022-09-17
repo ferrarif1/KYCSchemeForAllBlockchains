@@ -42,7 +42,7 @@ contract KYCManager is Ownable {
         address kycnftmanager = (address)(this);
         uint256 NFTId = kycNFTContract.awardItem(kycnftmanager, tokenUrl);
         kycNFTContract.updateExpirationTime(NFTId, expirationTime);
-        setNFTAvailableOfNFTId(NFTId, true);
+        setAvailableOfNFTId(NFTId, true);
         initManagerAddr(NFTId, manager);
     }
 
@@ -70,9 +70,9 @@ contract KYCManager is Ownable {
     /*
     ManagerToUserData
   */
-    function updateMerkleRoot(byte32 _merkleRoot) public {
+    function updateMerkleRoot(bytes32 newMerkleRoot) public {
         UserData storage userdata = ManagerToUserData[msg.sender];
-        userdata.merkleRoot = _merkleRoot;
+        userdata.merkleRoot = newMerkleRoot;
     }
 
     /*
@@ -144,11 +144,12 @@ contract KYCManager is Ownable {
         bytes32 leaf,
         bytes32[] calldata proof,
         uint256[] calldata positions,
-        uint256 nft_id
-    ) public returns (bool) {
+        uint256 NFTId
+    )public view returns (bool) {
         address addr = NFTIdToManager[NFTId];
         UserData memory userdata = ManagerToUserData[addr];
-        return verify(userdata.merkleRoot, leaf, proof, positions);
+        bool result = verifyMerkleProof(userdata.merkleRoot, leaf, proof, positions);
+        return result;
     }
 
     fallback() external payable {
