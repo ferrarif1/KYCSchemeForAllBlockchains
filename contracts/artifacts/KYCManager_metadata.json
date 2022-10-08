@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.4+commit.c7e474f2"
 	},
 	"language": "Solidity",
 	"output": {
@@ -342,7 +342,7 @@
 		"compilationTarget": {
 			"contracts/KYCManagerV2.sol": "KYCManager"
 		},
-		"evmVersion": "london",
+		"evmVersion": "istanbul",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -371,11 +371,11 @@
 			]
 		},
 		"contracts/KYCManagerV2.sol": {
-			"keccak256": "0xd6af0d2cac24a2bb55c2645d74e8db6fde398a354d4621b83bc6bc377140a9e9",
+			"keccak256": "0xc33c3dd93558d50ce059a2e44faa7a53326be0a3707a032cdbf047655c895a1b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://18e4247010f50f25caee7fe2c02533dadbbb43c602a862e96ce96883980a8365",
-				"dweb:/ipfs/QmYJ9Se2iFNF1yrMLJzGjdY9bGBUfq5E7yjU667qEx3pLn"
+				"bzz-raw://e024172cf37bef14db0ab46a74d48e4eebc5874b2ca6be4b88a4655ee68e4930",
+				"dweb:/ipfs/QmUnyXupBwZBoeUkPKZW26FNkzkG7eEr4rdS14GLJcedCb"
 			]
 		}
 	},

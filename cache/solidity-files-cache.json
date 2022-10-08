@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/zhangyuanyi/Downloads/KYCSchemeForAllBlockchains/contracts/KYCManager.sol": {
-      "lastModificationDate": 1654328341458,
-      "contentHash": "e4ffdec914889656184edb9b01eb6264",
+      "lastModificationDate": 1665208473196,
+      "contentHash": "328be1bb1abc68cea2b93b2902afd8b0",
       "sourceName": "contracts/KYCManager.sol",
       "solcConfig": {
         "version": "0.8.3",
@@ -35,7 +35,7 @@
         "^0.8.0"
       ],
       "artifacts": [
-        "KYCManager",
+        "KYCManagerV1",
         "KYCNFTInterface"
       ]
     },
@@ -515,6 +515,75 @@
       ],
       "artifacts": [
         "IERC165"
+      ]
+    },
+    "/Users/zhangyuanyi/Downloads/KYCSchemeForAllBlockchains/contracts/IDNFT.sol": {
+      "lastModificationDate": 1665208356847,
+      "contentHash": "64678930311c9205de8ed5331d6287e5",
+      "sourceName": "contracts/IDNFT.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
+    },
+    "/Users/zhangyuanyi/Downloads/KYCSchemeForAllBlockchains/contracts/KYCManagerV2.sol": {
+      "lastModificationDate": 1663375414040,
+      "contentHash": "153582086d1770b7e5307edac8312dff",
+      "sourceName": "contracts/KYCManagerV2.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "KYCManager",
+        "KYCNFTInterface"
       ]
     }
   }

@@ -1,8 +1,8 @@
-node：
+cmd到项目目录下启动 node：
 zhangyuanyi@192 KYCSchemeForAllBlockchains %  npx hardhat node
 Started HTTP and WebSocket JSON-RPC server at http://127.0.0.1:8545/
 
-zsh：
+vscode的控制台运行测试 zsh：
 zhangyuanyi@192 KYCSchemeForAllBlockchains % npx hardhat run --network localhost test/MarkleTreeScheme.js
 └─ e00b6b13d77ac98f8ff53658241723b8347250c8883ff06c064456b044090f7e
    ├─ 64ccd0697c79b58827b59d29a6fc008d210116998e5b0db702b67d95325e2c1e

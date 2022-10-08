@@ -140,6 +140,8 @@ async function main(outputPath) {
         });
     console.log("verified = ", contractVerify);
 
+    const { expect } = require("chai");
+
 }
 
 main("./test/outputMerkleTree.json");

@@ -32,7 +32,7 @@ contract KYCManager is Ownable {
     {
         kycNFTContract = KYCNFTInterface(_kycnftContractAddr);
     }
-
+    
     function createKYCNFT(
         string memory tokenUrl,
         address manager,
