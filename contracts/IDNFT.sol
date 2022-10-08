@@ -6,6 +6,14 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/utils/Address.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
+/*
+首先owner调用justmint 给用户铸造nft
+用户调用approveOwner批准owner操作其nft
+owner调用mintIDNFT更换所有者
+转账的相关函数（包括mint，transfer等）被_beforeTokenTransfer限制只能由owner调用
+*/
+
+
 
 /*
 n, accumulator is bigNumber，(May be out of range of uint256)，so use string as the value type
@@ -43,37 +51,7 @@ contract IDNFT is Ownable, ERC721URIStorage {
    mint ID NFT
    NFT_Data:HashCommitment(Xpub)，Issuer, Approved Scope of Business:[ICO, NFT Marketplace]
    */
-    function beforeMint(
-        address to,
-        string memory tokenURI,
-        uint256 expirationTime
-    ) public onlyOwner {
-        //set NFT data
-        _NFTIds.increment();
-        uint256 newItemId = _NFTIds.current();
-        SetUrlForNFTId[newItemId] = tokenURI;
-
-        //expiration time
-        updateExpirationTime(newItemId, expirationTime);
-        //unlock
-        manageIDNFT(newItemId, true);
-        //link data with account
-        AdminToUserData[to].NFTId = newItemId;
-        NFTIdToAdmin[newItemId] = to;
-    }
-
-    // invoke by user
-    function mintIDNFT() public returns (uint256) {
-        uint256 nftid = AdminToUserData[msg.sender].NFTId;
-        require(nftid > 0, "The NFTID should exist");
-        string memory tokenURI = SetUrlForNFTId[nftid];
-        _mint(msg.sender, nftid);
-        _setTokenURI(nftid, tokenURI);
-        approve(address(owner()), nftid);
-        // approve(address(this), nftid);
-        return nftid;
-    }
-
+ 
      function justMint(
         address to,
         string memory tokenURI,
