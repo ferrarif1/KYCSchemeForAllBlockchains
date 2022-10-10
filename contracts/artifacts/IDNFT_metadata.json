@@ -149,25 +149,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "SetUrlForNFTId",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
 						"internalType": "address",
 						"name": "to",
 						"type": "address"
@@ -179,13 +160,6 @@
 					}
 				],
 				"name": "approve",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "approveContract",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -319,6 +293,25 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "NFTId",
+						"type": "uint256"
+					}
+				],
+				"name": "managerOfNFTId",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "address",
 						"name": "to",
 						"type": "address"
@@ -334,46 +327,9 @@
 						"type": "uint256"
 					}
 				],
-				"name": "justMint",
+				"name": "mintIDNFT",
 				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "NFTId",
-						"type": "uint256"
-					},
-					{
-						"internalType": "bool",
-						"name": "approveOrLock",
-						"type": "bool"
-					}
-				],
-				"name": "manageIDNFT",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "NFTId",
-						"type": "uint256"
-					}
-				],
-				"name": "managerOfNFTId",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -605,12 +561,17 @@
 			{
 				"inputs": [
 					{
-						"internalType": "bytes32",
-						"name": "_hashOfXpub",
-						"type": "bytes32"
+						"internalType": "uint256",
+						"name": "NFTId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "approveOrLock",
+						"type": "bool"
 					}
 				],
-				"name": "updateAccumulator",
+				"name": "unlockIDNFT",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -619,7 +580,7 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "_accumulator",
+						"name": "_acc",
 						"type": "string"
 					},
 					{
@@ -659,6 +620,19 @@
 			{
 				"inputs": [
 					{
+						"internalType": "bytes32",
+						"name": "_hashOfXpub",
+						"type": "bytes32"
+					}
+				],
+				"name": "updateXupb",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "address",
 						"name": "managerAddr",
 						"type": "address"
@@ -685,7 +659,7 @@
 							},
 							{
 								"internalType": "string",
-								"name": "accumulator",
+								"name": "acc",
 								"type": "string"
 							},
 							{
@@ -731,7 +705,7 @@
 							},
 							{
 								"internalType": "string",
-								"name": "accumulator",
+								"name": "acc",
 								"type": "string"
 							},
 							{
@@ -926,11 +900,11 @@
 			]
 		},
 		"contracts/IDNFT.sol": {
-			"keccak256": "0x4affa78ac2e08d819af2f75b4ade73ce53b44e1870e7acba020a0f418eb2cc65",
+			"keccak256": "0x58aa2bc2d5b186830cdef710076528503d49e37fc048f4d8b09de5aa149b4a25",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b67de5e657a08fe7f720c27894333b99459893b2bd5c059c3053816a7c0ff458",
-				"dweb:/ipfs/QmX34ohf6SoR5an5QG7M4WFedutKyXiBHGh81n5CjAR21M"
+				"bzz-raw://dcf99ffcd8df65780d46965b1ca604c94194f748eb217af3da9c817f432610ae",
+				"dweb:/ipfs/QmYnopw2WvwCfM8G6S6Zp5UHx9gJpFvCQtRpp2Tf5jxpus"
 			]
 		}
 	},

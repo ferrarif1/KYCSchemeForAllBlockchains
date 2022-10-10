@@ -16,7 +16,7 @@ owner调用mintIDNFT更换所有者
 
 
 /*
-n, accumulator is bigNumber，(May be out of range of uint256)，so use string as the value type
+n, acc is bigNumber，(May be out of range of uint256)，so use string as the value type
 */
 contract IDNFT is Ownable, ERC721URIStorage {
     using Counters for Counters.Counter;
@@ -26,12 +26,12 @@ contract IDNFT is Ownable, ERC721URIStorage {
         uint256 NFTId;
         uint256 g;
         bytes32 hashOfXpub; //optional
-        string accumulator;
+        string acc;
         string n;
     }
-    mapping(uint256 => string) public SetUrlForNFTId;
+    // mapping(uint256 => string) public SetUrlForNFTId;
     mapping(uint256 => uint256) public NFTIdToExpirationTime;
-    mapping(uint256 => address) private NFTIdToAdmin;
+    // mapping(uint256 => address) private NFTIdToAdmin;
     mapping(address => UserData) private AdminToUserData;
     mapping(uint256 => bool) private NFTIdToAvailable;
 
@@ -39,9 +39,9 @@ contract IDNFT is Ownable, ERC721URIStorage {
         
     }
 
-    function approveContract() public{
-        setApprovalForAll(address(this), true);
-    }
+    // function approveContract() public{
+    //     setApprovalForAll(address(this), true);
+    // }
 
     function approveOwner() public{
         setApprovalForAll(address(owner()), true);
@@ -52,7 +52,7 @@ contract IDNFT is Ownable, ERC721URIStorage {
    NFT_Data:HashCommitment(Xpub)，Issuer, Approved Scope of Business:[ICO, NFT Marketplace]
    */
  
-     function justMint(
+     function mintIDNFT(
         address to,
         string memory tokenURI,
         uint256 expirationTime
@@ -66,10 +66,10 @@ contract IDNFT is Ownable, ERC721URIStorage {
         //expiration time
         updateExpirationTime(newItemId, expirationTime);
         //unlock
-        manageIDNFT(newItemId, true);
+        unlockIDNFT(newItemId, true);
         //link data with account
         AdminToUserData[to].NFTId = newItemId;
-        NFTIdToAdmin[newItemId] = to;
+
     }
 
   
@@ -91,7 +91,7 @@ contract IDNFT is Ownable, ERC721URIStorage {
     /*
     manageIDNFT： temporary freeze
     */
-    function manageIDNFT(uint256 NFTId, bool approveOrLock) public onlyOwner {
+    function unlockIDNFT(uint256 NFTId, bool approveOrLock) public onlyOwner {
         NFTIdToAvailable[NFTId] = approveOrLock;
     }
 
@@ -111,7 +111,6 @@ contract IDNFT is Ownable, ERC721URIStorage {
         uint256 nftid = userdata.NFTId;
         require(nftid > 0, "The user does not exist!");
         AdminToUserData[newAdmin] = userdata;
-        NFTIdToAdmin[userdata.NFTId] = newAdmin;
         transferFrom(oldAdmin, newAdmin, nftid);
     }
 
@@ -131,12 +130,12 @@ contract IDNFT is Ownable, ERC721URIStorage {
     */
 
     function updateAccumulator(
-        string memory _accumulator,
+        string memory _acc,
         string memory _n,
         uint256 _g
     ) public {
         UserData storage userdata = AdminToUserData[msg.sender];
-        userdata.accumulator = _accumulator;
+        userdata.acc = _acc;
         userdata.n = _n;
         userdata.g = _g;
     }
@@ -144,7 +143,7 @@ contract IDNFT is Ownable, ERC721URIStorage {
     /*
     update Xpub
     */
-    function updateAccumulator(bytes32 _hashOfXpub) public {
+    function updateXupb(bytes32 _hashOfXpub) public {
         UserData storage userdata = AdminToUserData[msg.sender];
         userdata.hashOfXpub = _hashOfXpub;
     }
@@ -154,7 +153,7 @@ contract IDNFT is Ownable, ERC721URIStorage {
    */
 
     function managerOfNFTId(uint256 NFTId) public view returns (address) {
-        address addr = NFTIdToAdmin[NFTId];
+        address addr = ownerOf(NFTId);
         return addr;
     }
 
@@ -163,7 +162,7 @@ contract IDNFT is Ownable, ERC721URIStorage {
         view
         returns (UserData memory)
     {
-        address addr = NFTIdToAdmin[NFTId];
+        address addr = ownerOf(NFTId);
         UserData memory userdata = AdminToUserData[addr];
         return userdata;
     }
