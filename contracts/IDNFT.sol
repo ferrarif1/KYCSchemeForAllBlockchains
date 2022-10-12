@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.4;
+pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
@@ -139,6 +139,8 @@ contract IDNFT is Ownable, ERC721URIStorage {
         userdata.n = _n;
         userdata.g = _g;
     }
+
+    
 
     /*
     update Xpub

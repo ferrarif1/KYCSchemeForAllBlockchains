@@ -61,7 +61,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/KYCManagerV2.sol": "KYCNFTInterface"
+			"contracts/KYCManager.sol": "KYCNFTInterface"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -91,12 +91,12 @@
 				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
 			]
 		},
-		"contracts/KYCManagerV2.sol": {
-			"keccak256": "0xc33c3dd93558d50ce059a2e44faa7a53326be0a3707a032cdbf047655c895a1b",
+		"contracts/KYCManager.sol": {
+			"keccak256": "0xf913d5dc3b3fbbad24a0beee654e1888039f37c5190721591774b1ca2ecaaa6f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e024172cf37bef14db0ab46a74d48e4eebc5874b2ca6be4b88a4655ee68e4930",
-				"dweb:/ipfs/QmUnyXupBwZBoeUkPKZW26FNkzkG7eEr4rdS14GLJcedCb"
+				"bzz-raw://45ee1b9dfe3edd31cac37845714e1a12b7fcadde43b210d7a389174cf8e33991",
+				"dweb:/ipfs/QmNtVz7yfqHE3LKp5p93wQQ7PtkNqhkbCFSw6s8smBMsza"
 			]
 		}
 	},

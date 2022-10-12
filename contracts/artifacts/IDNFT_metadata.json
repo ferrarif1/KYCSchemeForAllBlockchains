@@ -900,11 +900,11 @@
 			]
 		},
 		"contracts/IDNFT.sol": {
-			"keccak256": "0x58aa2bc2d5b186830cdef710076528503d49e37fc048f4d8b09de5aa149b4a25",
+			"keccak256": "0xee7e2ed148afca7f7c6fb0078802de97bf13160942559b746cc5cae708ade190",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://dcf99ffcd8df65780d46965b1ca604c94194f748eb217af3da9c817f432610ae",
-				"dweb:/ipfs/QmYnopw2WvwCfM8G6S6Zp5UHx9gJpFvCQtRpp2Tf5jxpus"
+				"bzz-raw://40905131e2ae0ab231970cf57786f8747feecb7342bcda2484ebd9cf95ab5417",
+				"dweb:/ipfs/Qmb8P4R1bkutUQ5ZtCgDRLAq44dyVG8zPMxpDynKYArn9L"
 			]
 		}
 	},

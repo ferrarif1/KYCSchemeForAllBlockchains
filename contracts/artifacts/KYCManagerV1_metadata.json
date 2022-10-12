@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.4+commit.c7e474f2"
 	},
 	"language": "Solidity",
 	"output": {
@@ -206,14 +206,14 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
+						"internalType": "bytes",
 						"name": "_accumulator",
-						"type": "string"
+						"type": "bytes"
 					},
 					{
-						"internalType": "string",
+						"internalType": "bytes",
 						"name": "_n",
-						"type": "string"
+						"type": "bytes"
 					},
 					{
 						"internalType": "uint256",
@@ -229,9 +229,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
+						"internalType": "bytes",
 						"name": "_n",
-						"type": "string"
+						"type": "bytes"
 					},
 					{
 						"internalType": "uint256",
@@ -247,9 +247,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
+						"internalType": "bytes",
 						"name": "_accumulator",
-						"type": "string"
+						"type": "bytes"
 					}
 				],
 				"name": "updateAccumulatorValue",
@@ -275,14 +275,14 @@
 								"type": "uint256"
 							},
 							{
-								"internalType": "string",
+								"internalType": "bytes",
 								"name": "accumulator",
-								"type": "string"
+								"type": "bytes"
 							},
 							{
-								"internalType": "string",
+								"internalType": "bytes",
 								"name": "n",
-								"type": "string"
+								"type": "bytes"
 							},
 							{
 								"internalType": "uint256",
@@ -316,14 +316,14 @@
 								"type": "uint256"
 							},
 							{
-								"internalType": "string",
+								"internalType": "bytes",
 								"name": "accumulator",
-								"type": "string"
+								"type": "bytes"
 							},
 							{
-								"internalType": "string",
+								"internalType": "bytes",
 								"name": "n",
-								"type": "string"
+								"type": "bytes"
 							},
 							{
 								"internalType": "uint256",
@@ -369,7 +369,7 @@
 		"compilationTarget": {
 			"contracts/KYCManager.sol": "KYCManagerV1"
 		},
-		"evmVersion": "london",
+		"evmVersion": "istanbul",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -398,11 +398,11 @@
 			]
 		},
 		"contracts/KYCManager.sol": {
-			"keccak256": "0x86894afd76d494482e0dc6b84a711e17df3241b45ce9c17581bbf58e2ada29fa",
+			"keccak256": "0xf913d5dc3b3fbbad24a0beee654e1888039f37c5190721591774b1ca2ecaaa6f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://13ef230a2ab53a844a1c8e53ea3a4b84eb581bb19ffa676ee70c0a93d421d53b",
-				"dweb:/ipfs/QmZzcjd5xyKCJUN8MNrQgX98xqU9p2WTzzo2t2gAj2N9uB"
+				"bzz-raw://45ee1b9dfe3edd31cac37845714e1a12b7fcadde43b210d7a389174cf8e33991",
+				"dweb:/ipfs/QmNtVz7yfqHE3LKp5p93wQQ7PtkNqhkbCFSw6s8smBMsza"
 			]
 		}
 	},

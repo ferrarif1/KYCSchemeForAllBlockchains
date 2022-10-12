@@ -1,5 +1,5 @@
 
-
+npx hardhat node
 zhangyuanyi@MacBook-Pro KYCSchemeForAllBlockchains % npx hardhat test
 0xdB3f6fD6025F83D6Cd82487A9d72119BCA018F74@ETH@BSC@POLY
 RSA1024 = 1.3506641086599523e+308

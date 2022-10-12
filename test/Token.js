@@ -35,7 +35,7 @@ class ModNumber {
 }
 
 
-const modNum = new ModNumber(BigNumber(531137992816767098689588206552468627329593117727031923199444138200403559860852242739162502265229285668889329486246501015346579337652707239409519978766587351943831270835393219031728127), BigNumber(6864797660130609714981900799081393217269435300143305409394463459185543183397656052122559640661454554977296311391480858037121987999716643812574028291115057151));
+const modNum = new ModNumber(BigNumber(12026655772210679470465581609002525329245773732132014742758935511187863487919026457076252932048619706498126046597130520643092209728783224795661331197604583), BigNumber(8002511426596424351829267099531651390448054153452321185350746845306277585856673898048740413439442356860630765545600353049345324913056448174487017235828857));
 console.log("RSA1024 = " + BigNumber(135066410865995223349603216278805969938881475605667027524485143851526510604859533833940287150571909441798207282164471551373680419703964191743046496589274256239341020864383202110372958725762358509643110564073501508187510676594629205563685529475213500852879416377328533906109750544334999811150056977236890927563))
 const N = modNum.N;
 const p = BigNumber(modNum.p);
@@ -440,6 +440,7 @@ describe("Check Test", function () {
         coins[coins.length - 1],
         generator
       )
+      console.log("proof1.value = " + proof1.value.toFixed() + "  proof1.proof = " + proof1.proof.toFixed())
       expect(RSAaccumulator.checkInclusionProof(accumulator, proof1) == true);
     });
 
@@ -452,14 +453,15 @@ describe("Check Test", function () {
       expect(RSAaccumulator.checkInclusionProof(accumulator, proof2) == false);
     });
 
-    it("Test InclusionProof for 'getProof2' ", async function () {
-      const proofin = RSAaccumulator.getProof2(
-        littleCoins,
-        littleCoins[1],
-        generator
-      )
-      expect(RSAaccumulator.checkInclusionProof2(generator, littleCoins[1], proofin) == true);
-    });
+    // it("Test InclusionProof for 'getProof2' ", async function () {
+    //   const proofin = RSAaccumulator.getProof2(
+    //     littleCoins,
+    //     littleCoins[1],
+    //     generator
+    //   )
+    //   console.log("proofin = " + proofin)
+    //   expect(RSAaccumulator.checkInclusionProof2(generator, littleCoins[1], proofin) == true);
+    // });
 
     it("Test modInverse", async function () {
       var y = coins[2]

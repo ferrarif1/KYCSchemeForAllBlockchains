@@ -14,8 +14,9 @@ n, accumulator is bigNumber，(May be out of range of uint256)，so use string a
 contract KYCManagerV1 is Ownable {
     struct UserData{
     uint NFTid;
-    string accumulator;
-    string n;
+    bytes accumulator;
+    bytes n;
+    uint256 g;
     }
   
   KYCNFTInterface kycNFTContract;
@@ -61,20 +62,20 @@ contract KYCManagerV1 is Ownable {
   /*
     ManagerToUserData
   */
-  function updateAccumulator(string memory _accumulator, string memory _n, uint256 _g) public {
+  function updateAccumulator(bytes memory _accumulator, bytes memory _n, uint256 _g) public {
       UserData storage userdata = ManagerToUserData[msg.sender];
       userdata.accumulator = _accumulator;
       userdata.n = _n;
       userdata.g = _g;
   }
 
-  function updateAccumulatorPublicKey(string memory _n, uint _g) public {
+  function updateAccumulatorPublicKey(bytes memory _n, uint256 _g) public {
       UserData storage userdata = ManagerToUserData[msg.sender];
       userdata.n = _n;
       userdata.g = _g;
   }
 
-  function updateAccumulatorValue(string memory _accumulator) public {
+  function updateAccumulatorValue(bytes memory _accumulator) public {
       UserData storage userdata = ManagerToUserData[msg.sender];
       userdata.accumulator = _accumulator;
   }
